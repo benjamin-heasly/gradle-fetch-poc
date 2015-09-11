@@ -9,9 +9,9 @@ I need a client to fetch and cache the artifacts locally.  I don't want to write
 So here is a small Gradle script for fetching artifacts.
 
 # Usage
-Run this script from the command line.  It doesn't have to be part of a fancy project or build system.
+You can run this script from the command line.
 
-The script comes with the [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) which is a script-plus-jar that prevents you from having to install Gradle yourself.
+The script comes with the [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) which is a script-plus-jar that prevents you from having to install Gradle yourself.  This really simplifies the command line usage!
 
 Use environment variables to point the script where you want:
   * `REPOSITORY`, `USERNAME`, and `PASSWORD` could point at Maven central, your own repository, wherever.
