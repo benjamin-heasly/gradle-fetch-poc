@@ -34,7 +34,7 @@ BUILD SUCCESSFUL
 Total time: 3.579 secs
 ```
 
-The second time you run the command, it will not have to download the artifact.
+The second time you run the command it will not have to download the artifact, but it will still report is as fetched.
 
 # Matlab
 It just so happens that I want to use this Gradle script from Matlab, so I wrote a Matlab wrapper around it called `FetchArtifact`.
