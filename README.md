@@ -19,7 +19,7 @@ Use environment variables to point the script where you want:
 
 For example, get an arbitrary Archiva jar from Maven Central:
 ```
-REPOSITORY="https://repo1.maven.org/maven2" USERNAME="" PASSWORD="" GROUP="org.apache.archiva" ID="archiva-cli" VERSION="2.2.0" EXTENSION="jar" ./gradlew -b fetch.gradle fetchAll
+REPOSITORY="https://repo1.maven.org/maven2" USERNAME="" PASSWORD="" GROUP="org.apache.archiva" ID="archiva-cli" VERSION="2.2.0" EXTENSION="jar" ./gradlew -b fetch.gradle fetchIt
 ```
 
 Gradle will resolve the artifact and write it to your local cache.  The script will tell you the path to the file.  The `FETCHED` prefix should make the path easy to scrape out.
