@@ -17,7 +17,7 @@ dependencies {
   fetch "${System.env.GROUP}:${System.env.ID}:${System.env.VERSION}@${System.env.EXTENSION}"
 }
 
-task fetchAll << {
+task fetchIt << {
   configurations.fetch.resolve().each {
     file -> println "FETCHED " + file.getPath()
   }
