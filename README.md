@@ -23,6 +23,8 @@ REPOSITORY="https://repo1.maven.org/maven2" USERNAME="" PASSWORD="" GROUP="org.a
 ```
 
 Gradle will resolve the artifact and dependencies and put them in your local cache.  The script will tell you the path to each file.  The `FETCHED` prefix should make the file paths easy to parse.
+
+The output looks like this:
 ```
 :fetchAll
 FETCHED /home/ben/.gradle/caches/modules-2/files-2.1/org.apache.archiva/archiva-cli/2.2.0/1ac1906571d186c876077e75d394818a04f8e49f/archiva-cli-2.2.0.jar
