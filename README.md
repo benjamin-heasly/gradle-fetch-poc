@@ -26,19 +26,12 @@ Gradle will resolve the artifact and write it to your local cache.  The script w
 
 The output looks like this:
 ```
-:fetchAll
-FETCHED /home/ben/.gradle/caches/modules-2/files-2.1/org.apache.archiva/archiva-cli/2.2.0/1ac1906571d186c876077e75d394818a04f8e49f/archiva-cli-2.2.0.jar
-FETCHED /home/ben/.gradle/caches/modules-2/files-2.1/org.apache.archiva/archiva-repository-scanner/2.2.0/1f5a5a4c24607a6dd3908210df02897e17f5b52f/archiva-repository-scanner-2.2.0.jar
-FETCHED /home/ben/.gradle/caches/modules-2/files-2.1/org.apache.archiva/archiva-repository-admin-api/2.2.0/1dba8c50cc745e93f3e43a22b31adb4021917337/archiva-repository-admin-api-2.2.0.jar
-
-...
-
-FETCHED /home/ben/.gradle/caches/modules-2/files-2.1/org.eclipse.sisu/org.eclipse.sisu.inject/0.1.0/26b8d748407f4eac4c5cee33836afd8d5c5286d5/org.eclipse.sisu.inject-0.1.0.jar
-FETCHED /home/ben/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.3.02/dc7315e359b5e43f20131414d60b5c307aace975/xml-apis-1.3.02.jar
+:fetchIt
+FETCHED /Users/ben/.gradle/caches/modules-2/files-2.1/org.apache.archiva/archiva-cli/2.2.0/1ac1906571d186c876077e75d394818a04f8e49f/archiva-cli-2.2.0.jar
 
 BUILD SUCCESSFUL
 
-Total time: 3.993 secs
+Total time: 3.579 secs
 ```
 
 # Thanks
