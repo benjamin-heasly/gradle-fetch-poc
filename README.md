@@ -2,7 +2,7 @@
 Proof of concept for using Gradle to fetch files from a Maven repository.
 
 # Overivew
-I want to store a bunch of binary artifacts on a Maven repository somewhere, probably using Archiva.
+I want to store a bunch of non-jar artifacts (non-jartifacts?) on a Maven repository somewhere, probably using Archiva.
 
 I need a client to fetch and cache the artifacts.  I don't want to write the client or worry about details like HTTP connections or checksums.  Gradle (and other tools) already solve these problems.
 
@@ -35,6 +35,6 @@ Total time: 3.579 secs
 ```
 
 # Thanks
-Thanks to [jiraaya](https://jiraaya.wordpress.com/2014/06/05/download-non-jar-dependency-in-gradle/) for tips:
+Thanks to [jiraaya](https://jiraaya.wordpress.com/2014/06/05/download-non-jar-dependency-in-gradle/) for some tips:
   * Use the `resolve()` method of a Gradle configuration.
-  * Use `@` to fetch a single non-jar artifact (non-jartifact?).
+  * Use `@` to fetch a single non-jar artifact.
