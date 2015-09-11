@@ -2,7 +2,7 @@
 Proof of concept for using Gradle to fetch files from a maven repository.
 
 # Overivew
-I want to store a bunch of binary artifacts on a maven repository somewhere, probably using Archiva.
+I want to store a bunch of binary artifacts on a Maven repository somewhere, probably using Archiva.
 
 I need a client to fetch and cache the artifacts.  I don't want to write the client or worry about details like HTTP connections or checksums.  Gradle (and other tools) already solve this problem.
 
