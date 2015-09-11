@@ -15,14 +15,14 @@ It comes with the [Gradle wrapper](https://docs.gradle.org/current/userguide/gra
 
 Use environment variables to point the script where you want:
   * `REPOSITORY`, `USERNAME`, and `PASSWORD` can point at Maven central, or your own repository.
-  * `GROUP`, `ID`, and `VERSION` select the artifact (and its dependencies) that you want. 
+  * `GROUP`, `ID`, `VERSION`, and `EXTENSION` select the artifact (plus any dependencies) that you want. 
 
 For example, get an arbitrary Archiva dependency from Maven Central:
 ```
-REPOSITORY="https://repo1.maven.org/maven2" USERNAME="" PASSWORD="" GROUP="org.apache.archiva" ID="archiva-cli" VERSION="2.2.0" ./gradlew -b fetch.gradle fetchAll
+REPOSITORY="https://repo1.maven.org/maven2" USERNAME="" PASSWORD="" GROUP="org.apache.archiva" ID="archiva-cli" VERSION="2.2.0" EXTENSION="pom" ./gradlew -b fetch.gradle fetchAll
 ```
 
-Gradle will resolve the artifact and dependencies and put them in your local cache.  The script will tell you the path to each file.  The `FETCHED` prefix should make the file paths easy to parse.
+Gradle will resolve the artifact and dependencies and put them in your local cache.  The script will tell you the path to each file.  The `FETCHED` prefix should make the file paths easy to parse line-by-line.
 
 The output looks like this:
 ```
