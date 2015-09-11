@@ -2,7 +2,7 @@
 Proof of concept for using Gradle to fetch files from a Maven repository.
 
 # Overivew
-I want to store a bunch of non-jar artifacts (non-jartifacts?) on a Maven repository somewhere, probably using [Archiva](https://archiva.apache.org/docs/1.3.6/quick-start.html).
+I want to store a bunch of non-jar artifacts (non-jartifacts?) on a Maven repository somewhere, maybe using [Archiva](https://archiva.apache.org/docs/1.3.6/quick-start.html).
 
 I need a client to fetch and cache the artifacts.  I don't want to write the client or worry about details like HTTP connections or checksums.  Gradle (and other tools) already solve these problems.
 
