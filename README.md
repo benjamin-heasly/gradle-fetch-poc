@@ -34,6 +34,23 @@ BUILD SUCCESSFUL
 Total time: 3.579 secs
 ```
 
+# Matlab
+It just so happens that I want to use this utility from Matlab, so I wrote a Matlab wrapper around the Gradle command.
+
+The usage is very similar:
+```
+filePath = FetchArtifact('https://repo1.maven.org/maven2', '', '', 'org.apache.archiva', 'archiva-cli', '2.2.0', 'jar')
+```
+
+And the output is scraped into a Matlab variable:
+```
+/Users/ben/Documents/Projects/gradle-fetch-poc/gradlew -b /Users/ben/Documents/Projects/gradle-fetch-poc/fetch.gradle fetchIt
+
+filePath =
+
+/Users/ben/.gradle/caches/modules-2/files-2.1/org.apache.archiva/archiva-cli/2.2.0/1ac1906571d186c876077e75d394818a04f8e49f/archiva-cli-2.2.0.jar
+```
+
 # Thanks
 Thanks to [jiraaya](https://jiraaya.wordpress.com/2014/06/05/download-non-jar-dependency-in-gradle/) for some tips:
   * Use the `resolve()` method of a Gradle configuration.
