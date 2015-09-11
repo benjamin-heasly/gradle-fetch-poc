@@ -1,0 +1,26 @@
+// REPOSITORY="https://repo1.maven.org/maven2" USERNAME="" PASSWORD="" GROUP="org.apache.archiva" ID="archiva-cli" VERSION="2.2.0" ./gradlew -b fetch.gradle fetchAll
+
+repositories {
+    maven {
+        credentials {
+            username "${System.env.USERNAME}"
+            password "${System.env.PASSWORD}"
+        }
+        url "${System.env.REPOSITORY}"
+    }
+}
+
+configurations {
+  fetch
+}
+
+dependencies {
+  fetch "${System.env.GROUP}:${System.env.ID}:${System.env.VERSION}"
+}
+
+task fetchAll << {
+  configurations.fetch.resolve().each {
+    file -> println "FETCHED " + file.getPath()
+  }
+}
+
