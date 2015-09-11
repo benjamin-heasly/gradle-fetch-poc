@@ -41,5 +41,5 @@ BUILD SUCCESSFUL
 Total time: 3.993 secs
 ```
 
-# Credit
-Thanks to [jiraaya](https://jiraaya.wordpress.com/2014/06/05/download-non-jar-dependency-in-gradle/) for the tip about using configuration resolve().
+# Thanks
+Thanks to [jiraaya](https://jiraaya.wordpress.com/2014/06/05/download-non-jar-dependency-in-gradle/) for the tip about using the resolve() method of a Gradle configuration.
