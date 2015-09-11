@@ -42,4 +42,6 @@ Total time: 3.993 secs
 ```
 
 # Thanks
-Thanks to [jiraaya](https://jiraaya.wordpress.com/2014/06/05/download-non-jar-dependency-in-gradle/) for the tip about using the `resolve()` method of a Gradle configuration.
+Thanks to [jiraaya](https://jiraaya.wordpress.com/2014/06/05/download-non-jar-dependency-in-gradle/) for tips:
+  * Use the `resolve()` method of a Gradle configuration.
+  * Use `@` to fetch artifacts other than '.jar' 
