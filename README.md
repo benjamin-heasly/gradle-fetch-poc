@@ -44,7 +44,7 @@ The usage is similar to the command line usage:
 filePath = FetchArtifact('https://repo1.maven.org/maven2', '', '', 'org.apache.archiva', 'archiva-cli', '2.2.0', 'jar')
 ```
 
-And the output then scraped into a Matlab variable:
+And the Gradle output gets scraped into a Matlab variable:
 ```
 filePath =
 
