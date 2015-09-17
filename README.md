@@ -1,5 +1,5 @@
 # gradle-fetch-poc
-Proof of concept for using Gradle to fetch files from a Maven repository.
+Proof of concept for using Gradle to fetch and publish files with a Maven repository.
 
 # Overivew
 I want to store a bunch of binary artifacts on a repository somewhere, maybe using [Archiva](https://archiva.apache.org/docs/1.3.6/quick-start.html).
@@ -93,3 +93,5 @@ This command will also put some files in a `build/` folder in the current direct
 Thanks to [jiraaya's blog](https://jiraaya.wordpress.com/2014/06/05/download-non-jar-dependency-in-gradle/) for some tips:
   * Use the `resolve()` method of a Gradle configuration.
   * Use `@` syntax to fetch a single non-jar artifact (non-jartifact?).
+
+Thanks to [mike-neck](http://mike-neck.github.io/blog/2013/06/21/how-to-publish-artifacts-with-gradle-maven-publish-plugin-version-1-dot-6/) for some Gradle maven-publish examples.
