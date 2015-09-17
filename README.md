@@ -1,5 +1,5 @@
 # gradle-fetch-poc
-Proof of concept for using Gradle to fetch files from a Maven repository.
+Proof of concept for using Gradle to fetch and publish files with a Maven repository.
 
 # Overivew
 I want to store a bunch of binary artifacts on a repository somewhere, maybe using [Archiva](https://archiva.apache.org/docs/1.3.6/quick-start.html).
