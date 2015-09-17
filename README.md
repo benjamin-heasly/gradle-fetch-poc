@@ -82,6 +82,11 @@ BUILD SUCCESSFUL
 Total time: 4.058 secs
 ```
 
+This command will also put some files in a `build/` folder in the current directory.  You can tell Gradle to clean this up:
+```
+./gradlew -b publish.gradle clean
+```
+
 ## Matlab
 
 # Thanks
