@@ -93,3 +93,5 @@ This command will also put some files in a `build/` folder in the current direct
 Thanks to [jiraaya's blog](https://jiraaya.wordpress.com/2014/06/05/download-non-jar-dependency-in-gradle/) for some tips:
   * Use the `resolve()` method of a Gradle configuration.
   * Use `@` syntax to fetch a single non-jar artifact (non-jartifact?).
+
+Thanks to [mike-neck](http://mike-neck.github.io/blog/2013/06/21/how-to-publish-artifacts-with-gradle-maven-publish-plugin-version-1-dot-6/) for some Gradle maven-publish examples.
