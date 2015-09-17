@@ -88,6 +88,19 @@ This command will also put some files in a `build/` folder in the current direct
 ```
 
 ## Matlab
+I also wrote a Matalb wrapper for publishing.
+
+Again, the usage is similar to the command line usage:
+```
+filePath = PublishArtifact('http://localhost:8080/repository/test-repository/', 'admin', '***', 'test-group', 'test-id', '77', 'test.txt')
+```
+
+The script fetches immeditely after a successful push, and returns the path into the local Gradle cache:
+```
+filePath =
+
+/Users/ben/.gradle/caches/modules-2/files-2.1/test-group/test-id/77/da39a3ee5e6b4b0d3255bfef95601890afd80709/test-id-77.txt
+```
 
 # Thanks
 Thanks to [jiraaya's blog](https://jiraaya.wordpress.com/2014/06/05/download-non-jar-dependency-in-gradle/) for some tips:
