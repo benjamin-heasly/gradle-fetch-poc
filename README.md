@@ -1,7 +1,7 @@
 # gradle-fetch-poc
 Proof of concept for using Gradle to fetch and publish files with a Maven repository.
 
-# Overivew
+# Overview
 I want to store a bunch of binary artifacts on a repository somewhere, maybe using [Archiva](https://archiva.apache.org/docs/1.3.6/quick-start.html).
 
 I need a client to fetch and cache the artifacts locally.  I don't want to write the client from scratch because there are already nice client-side tools like Gradle which know how to talk to repositories like Archiva.
